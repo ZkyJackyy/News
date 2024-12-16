@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/orange">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imglogo"
+        android:src="@drawable/logo"
+        android:layout_centerInParent="true"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvdeskripsi"
+        android:text="Berikut adalah halaman portal berita, semua informasi terkait berita bisa di akses"
+        android:layout_below="@+id/imglogo"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:text="Log in"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/tvdeskripsi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/orange1"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:text="sign up"
+        android:id="@+id/btnRegis"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/hijau"/>
+
+
+</RelativeLayout>
