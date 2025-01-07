@@ -36,7 +36,7 @@
                 android:layout_gravity="center"
                 android:indeterminateTint="@color/orange1"
                 android:visibility="gone"
-                android:id="@+id/progressbar"
+                android:id="@+id/progresbar"
                 />
 
 

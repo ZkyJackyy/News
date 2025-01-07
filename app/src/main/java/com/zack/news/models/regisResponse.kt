@@ -1,6 +1,6 @@
 package com.zack.news.models
 
 data class regisResponse(
-    val success : Boolean,
-    val message : Boolean
+    val succes : Boolean,
+    val message : String
 )

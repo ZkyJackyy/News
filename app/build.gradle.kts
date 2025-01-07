@@ -45,8 +45,15 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
+    //Interceptor
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.0")
+
+    //picaso lib
+    implementation ("com.squareup.picasso:picasso:2.8")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation ("com.github.dhaval2404:imagepicker:2.1")
 
 }

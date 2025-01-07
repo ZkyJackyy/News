@@ -1,6 +1,6 @@
 package com.zack.news.models
 
 data class loginResponse(
-    val success : Boolean,
-    val message : Boolean
+    val succes : Boolean,
+    val message : String
 )
