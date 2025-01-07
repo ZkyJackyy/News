@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TambahBeritaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bgheader"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80sp"
+                android:text="Tambah Berita"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/orange1"
+                android:visibility="gone"
+                android:id="@+id/progresbar"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="20sp"
+            android:paddingEnd="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul Berita"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/etjudul"
+                android:background="@drawable/bg_edittext"
+                android:hint="judul berita"
+                android:paddingStart="15sp"
+                android:drawableStart="@drawable/ic_judul"
+                android:drawableTint="@color/orange1"
+                android:drawablePadding="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gambar"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnGambar"
+                android:text="Pilih Gambar"
+                />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/imgGambar"
+                android:src="@drawable/bg_edittext"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:background="@color/black"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Isi Berita"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/etIsi"
+                android:hint="Isi berita"
+                android:gravity="start"
+                android:inputType="textImeMultiLine"
+                android:padding="10dp"
+                />
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btnTambah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginTop="20sp"
+                android:backgroundTint="@color/orange1"/>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

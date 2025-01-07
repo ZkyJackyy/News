@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgBerita"
+            android:scaleType="centerCrop"
+            android:layout_margin="10sp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvjudul"
+            android:layout_toEndOf="@+id/imgBerita"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10sp"
+            android:textSize="16sp"
+            android:text="judul berita"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvtgl"
+            android:layout_toEndOf="@+id/imgBerita"
+            android:layout_below="@+id/tvjudul"
+            android:layout_marginStart="10dp"
+            android:textSize="14sp"
+            android:text="17-12-2024 12:17"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvrating"
+            android:layout_below="@id/tvtgl"
+            android:layout_toStartOf="@id/ratingbar"
+            android:text="5"
+            android:textStyle="bold"
+            android:textColor="@color/orange1"
+            android:layout_marginEnd="5dp"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingbar"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tvtgl"
+            style="?android:attr/ratingBarStyleSmall"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:layout_marginEnd="8dp"
+            android:progressTint="@color/orange1"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
